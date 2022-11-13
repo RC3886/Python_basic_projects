@@ -1,0 +1,20 @@
+print("Welcome to our calculator.")
+print()
+num1 = float(input("Insert the first number.\n"))
+operator = input("Insert an operator (+, -, *, /).\n")
+num2 = float(input("Insert the second number.\n"))
+
+
+if operator == "+":
+    print("The result is " + str(num1 + num2))
+elif operator == "-":
+    print("The result is " + str(num1 - num2))
+elif operator == "*":
+    print("The result is " + str(num1 * num2))
+elif operator == "/":
+    if num2 == "0":
+        print("Can't divide by zero.")
+    else:
+        print("The result is " + str(num1 / num2))
+else:
+    print("Invalid operator.")
