@@ -1,0 +1,34 @@
+
+#user filling the words
+
+adj1 = input("Enter an adjective: ")
+pl_noun1 = input("Enter a plural noun: ")
+verb1 = input("Enter a verb ending with 'ing:' ")
+pl_noun2 = input("Enter a plural noun: ")
+celeb_female = input("Enter a female celebrity name: ")
+male_person = input("Enter a male friend: ")
+silly1 = input("Enter a silly word: ")
+verb2 = input("Enter a verb: ")
+food_pl = input("Enter a type of food in plural: ")
+noun3 = input("Enter a noun: ")
+food2_pl = input("Enter the same food in plural like before: ")
+adj2 = input("Enter an adjective: ")
+adj3 = input("Enter an adjective: ")
+shoe_pl = input("Enter a type of shoe in plural: ")
+alive = input("Enter something alive: ")
+noun4 = input("Enter a noun: ")
+verb3 = input("Enter a verb ending with 'ing': ")
+noun5 = input("Enter a noun: ")
+silly2 = input("Enter a silly word: ")
+
+
+
+#the actual text that gets printed
+
+print("One of the most " + adj1 + " things about graduating is that my " + pl_noun1 + " are " + verb1 +" a huge party!")
+print("I decided to have a backyard barbecue for all of my family and " + pl_noun2 + " .")
+print("I've invited my best friends " + celeb_female + ", " + male_person + ", and of course my teacher Mrs. " + silly1 + ".")
+print("My dad is going to " + verb2 + " hamburgers and " + food_pl + " on his shiny new " + noun3 + ".")
+print("He always thinks his " + food2_pl + " taste really " + adj2 + ", but I think they taste like " + adj3 + " " + shoe_pl + ".")
+print("My mom is going to make her famous " + alive + " salad, which is my favourite " + noun4 + " ever!")
+print("Mom said after we finish " + verb3 + ", we can go swimming in our new " + noun5 + ". " + silly2 + "!")
