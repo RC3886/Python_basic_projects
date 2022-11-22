@@ -66,7 +66,7 @@ for key, value in quiz_dict.items():    #loop through dictionary
         print("Your current score is " + str(score) + ".")
         print()
     elif answer.lower() == "quit":
-        break
+        break                           #quits the game
     else:
         print("Incorrect!")
         print("Your current score is " + str(score) + ".")
