@@ -1,5 +1,6 @@
 #introduction
-name = input("Hello user, what is your name? ")
+name = input("Welcome to our capital city quiz. What is your name? ")
+print("Hello " + name.capitalize() + ". We wish you good luck. If under any circumstances you want to quit the quiz, type 'quit'.")
 
 #dictionary
 quiz_dict = {
@@ -64,6 +65,8 @@ for key, value in quiz_dict.items():    #loop through dictionary
         score += 1
         print("Your current score is " + str(score) + ".")
         print()
+    elif answer.lower() == "quit":
+        break
     else:
         print("Incorrect!")
         print("Your current score is " + str(score) + ".")
@@ -77,4 +80,4 @@ if score > 8:
 elif 5 < score < 8:
     print("Good enough, " + name.upper() + ".")
 else:
-    print("You should practice more often, " + name.upper() + ".")
+    print("You should practice more often, " + name.capitalize() + ".")
