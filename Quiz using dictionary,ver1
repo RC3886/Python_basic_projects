@@ -1,0 +1,80 @@
+#introduction
+name = input("Hello user, what is your name? ")
+
+#dictionary
+quiz_dict = {
+    "Q1":{
+        "question": "What is the capital of Czech Republic?",
+        "answer": "Prague"
+         },
+    "Q2": {
+        "question": "What is the capital of Poland?",
+        "answer": "Warsaw"
+        },
+    "Q3": {
+        "question": "What is the capital of Germany?",
+        "answer": "Berlin"
+        },
+    "Q4": {
+        "question": "What is the capital of Slovakia?",
+        "answer": "Bratislava"
+        },
+    "Q5": {
+        "question": "What is the capital of Austria?",
+        "answer": "Vienna"
+        },
+    "Q6": {
+        "question": "What is the capital of Hungary?",
+        "answer": "Budapest"
+        },
+    "Q7": {
+        "question": "What is the capital of Belgium?",
+        "answer": "Brussels"
+        },
+    "Q8": {
+        "question": "What is the capital of New Zealand?",
+        "answer": "Wellington"
+        },
+    "Q9": {
+        "question": "What is the capital of Afghanistan?",
+        "answer": "Kabul"
+        },
+    "Q10": {
+        "question": "What is the capital of Bulgaria?",
+        "answer": "Sofia"
+        },
+
+
+
+    }
+
+
+
+#score tracking
+score = 0
+
+
+
+for key, value in quiz_dict.items():    #loop through dictionary
+    print(value["question"])            #prints question of the set
+    answer = input("Answer? ")          #asks for an answer
+
+    if answer.lower() == value["answer"].lower():
+        print("Correct!")
+        score += 1
+        print("Your current score is " + str(score) + ".")
+        print()
+    else:
+        print("Incorrect!")
+        print("Your current score is " + str(score) + ".")
+        print()
+
+
+print("Your final score is " + str(score) + "/10.")
+
+if score > 8:
+    print("You are good, " + name.upper() + ".")
+elif 5 < score < 8:
+    print("Good enough, " + name.upper() + ".")
+else:
+    print("You should practice more often, " + name.upper() + ".")
